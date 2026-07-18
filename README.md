@@ -1,30 +1,72 @@
-# AWS Event-Driven Architecture
+**AWS Event-Driven Architecture**
 
-## Overview
+**Project Overview**
 
-AWS event-driven architecture using managed messaging and event services.
+Event-driven cloud architecture built using AWS managed messaging and event services. This project demonstrates how to build scalable, loosely coupled applications through asynchronous communication.
 
-## Technologies
+**Project Goal**
 
-- Amazon EventBridge
-- Amazon SNS
-- Amazon SQS
+Design an event-driven architecture using Amazon EventBridge, Amazon SNS, and Amazon SQS to demonstrate modern cloud-native messaging and event processing patterns.
 
-## Features
+**Architecture**
 
-- Event routing
-- Message queuing
-- Publish/subscribe messaging
-- Decoupled application design
+```text
+Event Source
+     │
+     ▼
+Amazon EventBridge
+     │
+     ▼
+Amazon SNS
+     │
+     ▼
+Amazon SQS
+     │
+     ▼
+Application Consumers
+```
 
-## Project Structure
+**Technologies**
 
-- eventbridge/
-- sns/
-- sqs/
-- diagrams/
-- screenshots/
+* Amazon EventBridge
+* Amazon SNS
+* Amazon SQS
+* AWS
+* Event-Driven Architecture
 
-## Status
+**Features**
 
-Completed
+* Event routing
+* Publish/subscribe messaging
+* Message queuing
+* Asynchronous communication
+* Decoupled application design
+
+**Project Structure**
+
+```text
+eventbridge/
+sns/
+sqs/
+diagrams/
+screenshots/
+```
+
+**Key Learnings**
+
+* Event-driven architecture patterns
+* Amazon EventBridge event routing
+* Amazon SNS publish/subscribe messaging
+* Amazon SQS message queuing
+* Designing loosely coupled cloud applications
+
+**Status**
+
+✅ Completed
+
+**Future Improvements**
+
+* Add Infrastructure as Code using Terraform
+* Implement monitoring and alerting
+* Add dead-letter queue (DLQ) support
+* Integrate Lambda event processing

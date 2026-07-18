@@ -1,10 +1,10 @@
-# AWS Event-Driven Architecture
-
 Application
-     |
-     v
-EventBridge
-     |
-     +-------> SNS
-     |
-     +-------> SQS
+    │
+    ▼
+Amazon EventBridge
+    │
+    ▼
+Amazon SNS
+    │
+    ▼
+Amazon SQS
